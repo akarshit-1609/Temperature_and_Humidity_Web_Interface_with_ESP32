@@ -85,3 +85,9 @@ Once the code is uploaded, connect any device with esp32 wifi by ssid and passwo
 ![screenshot](screenshot.png)
 
 **Enjoy your ESP32-based environment monitor!**
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
