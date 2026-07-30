@@ -1,0 +1,39 @@
+#heading {
+  display: flex;
+  margin: 50px auto;
+  align-items: center;
+  justify-content: center;
+  color: green;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.container img {
+  margin-left: 20px;
+  height: 48px;
+}
+.container .name {
+  margin-left: 10px;
+  font-size: 32px;
+  width: 200px;
+}
+.container .colon {
+  margin-left: 4px;
+  font-size: 32px;
+}
+
+.data {
+  margin-left: 16px;
+  font-size: 36px;
+}
+
+#temp {
+  color: #ff5500;
+}
+
+#humd {
+  color: #0099ff;
+}

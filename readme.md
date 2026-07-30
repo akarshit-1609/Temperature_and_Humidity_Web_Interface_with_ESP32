@@ -65,13 +65,25 @@ This project uses an ESP32 with a DHT11 sensor to display real-time temperature 
 
     *   Connect your ESP32 board to your computer via USB.
     *   In PlatformIO, click the "Build" button to compile the project.
-    *   Click the "Upload" button to upload the compiled code to your ESP32.
+    *   Upload the web files (LittleFS):
+        - In PlatformIO, open **Project Tasks → Platform → Upload Filesystem Image** or run:
+
+            ```bash
+            pio run --target uploadfs
+            ```
+    
+    *   Click **Upload** in PlatformIO or run:
+
+        ```bash
+        pio run --target upload
+        ```
 
 ## Project Structure
 
 *   `platformio.ini`: PlatformIO configuration file.
 *   `src/main.cpp`: The main source code file.
 *   `lib/`: (Optional) Directory for external libraries.
+*   `data/`: Stores all webpage files (HTML, CSS, JavaScript, images, etc.) used by the ESP32 web server.
 
 
 ## Usage
@@ -80,9 +92,11 @@ Once the code is uploaded, connect any device with esp32 wifi by ssid and passwo
 
 ---
 
-## Screenshot of web interface for demo
+## Screenshot of web interface and demonstration
 
 ![screenshot](screenshot.png)
+
+![demo](demo.jpg)
 
 **Enjoy your ESP32-based environment monitor!**
 
